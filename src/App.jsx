@@ -11,8 +11,8 @@ function App() {
 
   return (
     <>
-      {/* <HeroBg />*/}
-      {/* <Navbar /> */}
+      {/* <HeroBg />
+      <Navbar /> */}
       <HeroSection />
     </>
   );

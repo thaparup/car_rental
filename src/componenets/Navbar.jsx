@@ -5,7 +5,7 @@ export default function Navbar() {
   const [nav, setNav] = useState(false);
 
   return (
-    <nav>
+    <nav className="">
       <div
         className={` ${nav ? " w-screen h-screen flex flex-col " : "hidden"}`}
       >
@@ -44,29 +44,29 @@ export default function Navbar() {
       <section className=" relative z-20  flex justify-between px-[7.2rem] py-[1.8rem] lg:px-[1.27rem] lg:py-[1.7rem] md:px-[1.27rem] md:py-[1.7rem] sm:px-[1.27rem] sm:py-[1.7rem] xsm:px-[1.27rem] xsm:py-[1.7rem]">
         <img src={Logo} height={143} width={143} className="" />
 
-        <div className="text-md font-[600] gap-5 text-pmBlack self-center mt-3  md:hidden sm:hidden xsm:hidden">
+        <div className="text-md font-bold gap-5 text-pmBlack self-center mt-3  md:hidden sm:hidden xsm:hidden ">
           <ul className="flex gap-4 ">
-            <li>
+            <li className=" transition-colors duration-500 hover:text-pmColor">
               <a href="/home">Home</a>
             </li>
 
-            <li>
+            <li className="transition-colors duration-500 hover:text-pmColor">
               <a href="/about">About</a>
             </li>
 
-            <li>
+            <li className="transition-colors duration-500 hover:text-pmColor">
               <a href="/about">Vehicle Models</a>
             </li>
 
-            <li>
+            <li className="transition-colors duration-500 hover:text-pmColor">
               <a href="/about">Testimonials</a>
             </li>
 
-            <li>
+            <li className="transition-colors duration-500 hover:text-pmColor">
               <a href="/about">Our Team</a>
             </li>
 
-            <li>
+            <li className="transition-colors duration-500 hover:text-pmColor">
               <a href="/about">Contact</a>
             </li>
           </ul>
@@ -78,7 +78,7 @@ export default function Navbar() {
           </a>
           <a
             href=""
-            className="bg-pmColor text-white font-semibold rounded-[0.2rem] shadow-lg px-[2rem] py-[1rem]"
+            className="bg-pmColor text-white font-semibold rounded-[0.2rem]  px-[2rem] py-[0.8rem] shadow-boxShadowRed transition-shadow duration-300 hover:shadow-boxShadowRedHover"
           >
             Register
           </a>
