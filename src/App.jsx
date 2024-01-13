@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./componenets/Navbar";
 import HeroSection from "./componenets/HeroSection";
+import BookACar from "./componenets/BookACar";
 import HeroBg from "./componenets/HeroBg";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       {/* <HeroBg />
       <Navbar /> */}
       <HeroSection />
+      <BookACar />
     </>
   );
 }

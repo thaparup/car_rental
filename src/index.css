@@ -25,3 +25,12 @@ a{
 li{
   list-style: none;
 }
+
+.box-form__car-time ::-webkit-datetime-edit {
+  padding: 1.3rem 1.3rem;
+}
+
+.box-form__car-time ::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
