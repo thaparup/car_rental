@@ -5,7 +5,7 @@ import { CiCalendarDate } from "react-icons/ci";
 
 export default function BookACar() {
   return (
-    <section className="border-2 border-white relative mx-[7.2rem] my-8 bg-white rounded-md shadow-boxShadow bg-[url('/s/assets/book-car/book-bg.png')]">
+    <section className="border-2 border-white relative mx-[7.2rem] my-8 bg-white rounded-md shadow-boxShadow bg-[url('/src/assets/book-car/book-bg.png')]">
       <div className="px-12 py-12">
         <h3 className="text-2xl font-bold font-poppins">Book a car</h3>
         <div className="pt-6 grid grid-cols-3 gap-4">

@@ -6,7 +6,8 @@ import Navbar from "./componenets/Navbar";
 import HeroSection from "./componenets/HeroSection";
 import BookACar from "./componenets/BookACar";
 import HeroBg from "./componenets/HeroBg";
-
+import PlanTrip from "./componenets/PlanTrip";
+import VehicleModels from "./componenets/VehicleModels";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -16,6 +17,8 @@ function App() {
       <Navbar /> */}
       <HeroSection />
       <BookACar />
+      <PlanTrip />
+      <VehicleModels />
     </>
   );
 }
