@@ -8,6 +8,8 @@ import BookACar from "./componenets/BookACar";
 import HeroBg from "./componenets/HeroBg";
 import PlanTrip from "./componenets/PlanTrip";
 import VehicleModels from "./componenets/VehicleModels";
+import Banner from "./componenets/Banner";
+import WhyChooseUs from "./componenets/WhyChooseUs";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -19,6 +21,8 @@ function App() {
       <BookACar />
       <PlanTrip />
       <VehicleModels />
+      <Banner />
+      <WhyChooseUs />
     </>
   );
 }

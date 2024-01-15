@@ -1,4 +1,4 @@
-import Golf6 from "../assets/cars-big/golf6-box.png";
+import Golf6 from "../assets/cars-big/golf6.jpg";
 import AudiA1 from "../assets/cars-big/audia1.jpg";
 import Toyota from "../assets/cars-big/toyotacamry.jpg";
 import Bmw320 from "../assets/cars-big/bmw320.jpg";

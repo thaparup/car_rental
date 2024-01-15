@@ -33,6 +33,7 @@ export default {
       boxShadow: "rgba(0, 0, 0, 0.24) 01px 4px 12px",
       boxShadowRed: "#ff4d30 01px 4px 4px",
       boxShadowRedHover: "#ff4d30 1px 8px 10px 0px",
+      boxShadowRedReserveNow: "6px 6px 0 #efe9e9",
     },
   },
 
