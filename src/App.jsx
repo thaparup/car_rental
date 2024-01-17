@@ -10,6 +10,8 @@ import PlanTrip from "./componenets/PlanTrip";
 import VehicleModels from "./componenets/VehicleModels";
 import Banner from "./componenets/Banner";
 import WhyChooseUs from "./componenets/WhyChooseUs";
+import Testimonials from "./componenets/Testimonials";
+import FAQ from "./componenets/FAQ";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -23,6 +25,8 @@ function App() {
       <VehicleModels />
       <Banner />
       <WhyChooseUs />
+      <Testimonials />
+      <FAQ />
     </>
   );
 }
