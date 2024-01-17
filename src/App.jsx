@@ -12,6 +12,8 @@ import Banner from "./componenets/Banner";
 import WhyChooseUs from "./componenets/WhyChooseUs";
 import Testimonials from "./componenets/Testimonials";
 import FAQ from "./componenets/FAQ";
+import Download from "./componenets/Download";
+import Footer from "./componenets/Footer";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -27,6 +29,8 @@ function App() {
       <WhyChooseUs />
       <Testimonials />
       <FAQ />
+      <Download />
+      <Footer />
     </>
   );
 }
