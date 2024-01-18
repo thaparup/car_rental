@@ -14,6 +14,8 @@ import Testimonials from "./componenets/Testimonials";
 import FAQ from "./componenets/FAQ";
 import Download from "./componenets/Download";
 import Footer from "./componenets/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./Pages/About";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -21,7 +23,7 @@ function App() {
     <>
       {/* <HeroBg />
       <Navbar /> */}
-      <HeroSection />
+      {/* <HeroSection />
       <BookACar />
       <PlanTrip />
       <VehicleModels />
@@ -30,7 +32,14 @@ function App() {
       <Testimonials />
       <FAQ />
       <Download />
-      <Footer />
+      <Footer /> */}
+
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
