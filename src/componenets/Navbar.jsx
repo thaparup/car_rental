@@ -55,7 +55,7 @@ export default function Navbar() {
             </li>
 
             <li className="transition-colors duration-500 hover:text-pmColor">
-              <a href="/about">Vehicle Models</a>
+              <a href="/models">Vehicle Models</a>
             </li>
 
             <li className="transition-colors duration-500 hover:text-pmColor">

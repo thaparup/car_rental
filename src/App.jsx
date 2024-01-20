@@ -16,6 +16,7 @@ import Download from "./componenets/Download";
 import Footer from "./componenets/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
+import VehicleModel from "./componenets/VehicleModel";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -38,6 +39,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/about" element={<About />} />
+          <Route path="/models" element={<VehicleModel />} />
         </Routes>
       </BrowserRouter>
     </>
