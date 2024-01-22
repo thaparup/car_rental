@@ -10,18 +10,18 @@ import { IconCar, IconChevronsRight, IconStar } from "@tabler/icons";
 
 export default function CarCard() {
   return (
-    <div className="grid grid-cols-3 mx-36 gap-8">
+    <div className="grid grid-cols-3 mx-[12.3rem] gap-8">
       <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
-        <div className="w-full h-auto ">
+        <div className="w-full h-auto  ">
           <img
             src={CarImg1}
             alt="car_img"
-            className="w-full h-[20rem] rounded-lg"
+            className="w-full  rounded-lg h-[17rem] "
           />
-          <div className="px-6 py-8 flex-col text-pmBlack">
+          <div className="px-6 pt-6 pb-5 flex-col text-pmBlack ">
             <div className="flex justify-between items-center">
               <div className="flex flex-col text-left gap-2">
-                <p className="text-2xl font-bold">Audi A1</p>
+                <p className="text-2xl font-bold leading-none">Audi A1</p>
                 <span className="flex gap-2">
                   <IconStar
                     width={15}
@@ -51,29 +51,29 @@ export default function CarCard() {
                 </span>
               </div>
               <div className="flex flex-col text-right">
-                <h4 className="text-[1.6rem] font-bold">$45</h4>
+                <h4 className="text-[1.6rem] font-bold leading-none">$45</h4>
                 <p className="text-[1rem]">per day</p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-6 mt-6 pb-8 CardCarSpan ">
-              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex">
+            <div className="grid grid-cols-2 gap-6 mt-6 pb-8 CardCarSpan">
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
                 <IconCar /> &nbsp; Audi
               </span>
 
-              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end">
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
                 4/5 &nbsp; <IconCar />
               </span>
-              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex">
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
                 <IconCar /> &nbsp; Manual
               </span>
-              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end">
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
                 Diesel &nbsp; <IconCar />
               </span>
             </div>
 
             <a
               href="#home"
-              className="flex py-6 mt-6 bg-pmColor rounded-sm font-bold text-white shadow-boxShadowRed transitons-shadow duration-300 hover:shadow-boxShadowRedHover"
+              className="flex py-6 mt-3 bg-pmColor rounded-sm font-bold text-white shadow-boxShadowRed transitons-shadow duration-300 hover:shadow-boxShadowRedHover"
               onClick={() => window.scrollTo(0, 0)}
             >
               <p className="mx-auto text-xl font-extrabold ">Book Ride</p>
@@ -82,177 +82,365 @@ export default function CarCard() {
         </div>
       </div>
 
-      <div className="models-div__box">
-        <div className="models-div__box__img">
-          <img src={CarImg2} alt="car_img" />
-          <div className="models-div__box__descr">
-            <div className="models-div__box__descr__name-price">
-              <div className="models-div__box__descr__name-price__name">
-                <p>Golf 6</p>
-                {/* <span>
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                </span> */}
+      {/* Row 1 Column 2 */}
+
+      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
+        <div className="w-full h-auto ">
+          <img
+            src={CarImg2}
+            alt="car_img"
+            className="w-full  rounded-lg h-[17rem]"
+          />
+          <div className="px-6 pt-6 pb-5 flex-col text-pmBlack ">
+            <div className="flex justify-between items-center">
+              <div className="flex flex-col text-left gap-2">
+                <p className="text-2xl font-bold leading-none">Golf 6</p>
+                <span className="flex gap-2">
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                </span>
               </div>
-              <div className="models-div__box__descr__name-price__price">
-                <h4>$37</h4>
-                <p>per day</p>
+              <div className="flex flex-col text-right">
+                <h4 className="text-[1.6rem] font-bold leading-none">$37</h4>
+                <p className="text-[1rem]">per day</p>
               </div>
             </div>
-            <div className="models-div__box__descr__name-price__details">
-              <span>&nbsp; VW</span>
-              <span style={{ textAlign: "right" }}>4/5 &nbsp;</span>
-              <span>&nbsp; Manual</span>
-              <span style={{ textAlign: "right" }}>Diesel &nbsp;</span>
+            <div className="grid grid-cols-2 gap-6 mt-6 pb-8 CardCarSpan">
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
+                <IconCar /> &nbsp; VW
+              </span>
+
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
+                4/5 &nbsp; <IconCar />
+              </span>
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
+                <IconCar /> &nbsp; Manual
+              </span>
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
+                Diesel &nbsp; <IconCar />
+              </span>
             </div>
-            <div className="models-div__box__descr__name-price__btn">
-              <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                Book Ride
-              </Link>
-            </div>
+
+            <a
+              href="#home"
+              className="flex py-6 mt-3 bg-pmColor rounded-sm font-bold text-white shadow-boxShadowRed transitons-shadow duration-300 hover:shadow-boxShadowRedHover"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              <p className="mx-auto text-xl font-extrabold ">Book Ride</p>
+            </a>
           </div>
         </div>
       </div>
 
-      <div className="models-div__box">
-        <div className="models-div__box__img">
-          <img src={CarImg3} alt="car_img" />
-          <div className="models-div__box__descr">
-            <div className="models-div__box__descr__name-price">
-              <div className="models-div__box__descr__name-price__name">
-                <p>Toyota</p>
-                {/* <span>
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                </span> */}
+      {/* Row1 Column 3 */}
+
+      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
+        <div className="w-full h-auto ">
+          <img
+            src={CarImg3}
+            alt="car_img"
+            className="w-full  rounded-lg  h-[17rem]"
+          />
+          <div className="px-6 pt-6 pb-5 flex-col text-pmBlack ">
+            <div className="flex justify-between items-center">
+              <div className="flex flex-col text-left gap-2">
+                <p className="text-2xl font-bold leading-none">Toyota</p>
+                <span className="flex gap-2">
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                </span>
               </div>
-              <div className="models-div__box__descr__name-price__price">
-                <h4>$30</h4>
-                <p>per day</p>
+              <div className="flex flex-col text-right">
+                <h4 className="text-[1.6rem] font-bold leading-none">$30</h4>
+                <p className="text-[1rem]">per day</p>
               </div>
             </div>
-            <div className="models-div__box__descr__name-price__details">
-              <span>&nbsp; Camry</span>
-              <span style={{ textAlign: "right" }}>4/5 &nbsp;</span>
-              <span>&nbsp; Manual</span>
-              <span style={{ textAlign: "right" }}>Diesel &nbsp;</span>
+            <div className="grid grid-cols-2 gap-6 mt-6 pb-8 CardCarSpan">
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
+                <IconCar /> &nbsp; Camry
+              </span>
+
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
+                4/5 &nbsp; <IconCar />
+              </span>
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
+                <IconCar /> &nbsp; Manual
+              </span>
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
+                Diesel &nbsp; <IconCar />
+              </span>
             </div>
-            <div className="models-div__box__descr__name-price__btn">
-              <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                Book Ride
-              </Link>
-            </div>
+
+            <a
+              href="#home"
+              className="flex py-6 mt-3 bg-pmColor rounded-sm font-bold text-white shadow-boxShadowRed transitons-shadow duration-300 hover:shadow-boxShadowRedHover"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              <p className="mx-auto text-xl font-extrabold ">Book Ride</p>
+            </a>
           </div>
         </div>
       </div>
 
-      <div className="models-div__box">
-        <div className="models-div__box__img">
-          <img src={CarImg4} alt="car_img" />
-          <div className="models-div__box__descr">
-            <div className="models-div__box__descr__name-price">
-              <div className="models-div__box__descr__name-price__name">
-                <p>BMW 320</p>
-                {/* <span>
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                </span> */}
+      {/* Row 2 Coulumn1 */}
+
+      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
+        <div className="w-full h-auto ">
+          <img
+            src={CarImg4}
+            alt="car_img"
+            className="w-full  rounded-lg   min-h-[17rem] object-fill"
+          />
+          <div className="px-6 pt-6 pb-5 flex-col text-pmBlack ">
+            <div className="flex justify-between items-center">
+              <div className="flex flex-col text-left gap-2">
+                <p className="text-2xl font-bold leading-none">BMW 320</p>
+                <span className="flex gap-2">
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                </span>
               </div>
-              <div className="models-div__box__descr__name-price__price">
-                <h4>$35</h4>
-                <p>per day</p>
+              <div className="flex flex-col text-right">
+                <h4 className="text-[1.6rem] font-bold leading-none">$45</h4>
+                <p className="text-[1rem]">per day</p>
               </div>
             </div>
-            <div className="models-div__box__descr__name-price__details">
-              <span>&nbsp; ModernLine</span>
-              <span style={{ textAlign: "right" }}>4/5 &nbsp;</span>
-              <span>&nbsp; Manual</span>
-              <span style={{ textAlign: "right" }}>Diesel &nbsp;</span>
+            <div className="grid grid-cols-2 gap-6 mt-6 pb-8 CardCarSpan">
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
+                <IconCar /> &nbsp; ModernLine
+              </span>
+
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
+                4/5 &nbsp; <IconCar />
+              </span>
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
+                <IconCar /> &nbsp; Manual
+              </span>
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
+                Diesel &nbsp; <IconCar />
+              </span>
             </div>
-            <div className="models-div__box__descr__name-price__btn">
-              <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                Book Ride
-              </Link>
-            </div>
+
+            <a
+              href="#home"
+              className="flex py-6 mt-3 bg-pmColor rounded-sm font-bold text-white shadow-boxShadowRed transitons-shadow duration-300 hover:shadow-boxShadowRedHover"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              <p className="mx-auto text-xl font-extrabold ">Book Ride</p>
+            </a>
           </div>
         </div>
       </div>
+      {/* Row 2 Column 2 */}
 
-      <div className="models-div__box">
-        <div className="models-div__box__img">
-          <img src={CarImg5} alt="car_img" />
-          <div className="models-div__box__descr">
-            <div className="models-div__box__descr__name-price">
-              <div className="models-div__box__descr__name-price__name">
-                <p>Mercedes</p>
-                {/* <span>
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                </span> */}
+      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
+        <div className="w-full h-auto ">
+          <img
+            src={CarImg5}
+            alt="car_img"
+            className="w-full  rounded-lg   min-h-[17rem] object-fill"
+          />
+          <div className="px-6 pt-6 pb-5 flex-col text-pmBlack ">
+            <div className="flex justify-between items-center">
+              <div className="flex flex-col text-left gap-2">
+                <p className="text-2xl font-bold leading-none">Mercedes</p>
+                <span className="flex gap-2">
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                </span>
               </div>
-              <div className="models-div__box__descr__name-price__price">
-                <h4>$50</h4>
-                <p>per day</p>
+              <div className="flex flex-col text-right">
+                <h4 className="text-[1.6rem] font-bold leading-none">$85</h4>
+                <p className="text-[1rem]">per day</p>
               </div>
             </div>
-            <div className="models-div__box__descr__name-price__details">
-              <span>&nbsp; Benz GLK</span>
-              <span style={{ textAlign: "right" }}>4/5 &nbsp;</span>
-              <span>&nbsp; Manual</span>
-              <span style={{ textAlign: "right" }}>Diesel &nbsp;</span>
+            <div className="grid grid-cols-2 gap-6 mt-6 pb-8 CardCarSpan">
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
+                <IconCar /> &nbsp; Benz GLK
+              </span>
+
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
+                4/5 &nbsp; <IconCar />
+              </span>
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
+                <IconCar /> &nbsp; Manual
+              </span>
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
+                Diesel &nbsp; <IconCar />
+              </span>
             </div>
-            <div className="models-div__box__descr__name-price__btn">
-              <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                Book Ride
-              </Link>
-            </div>
+
+            <a
+              href="#home"
+              className="flex py-6 mt-3 bg-pmColor rounded-sm font-bold text-white shadow-boxShadowRed transitons-shadow duration-300 hover:shadow-boxShadowRedHover"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              <p className="mx-auto text-xl font-extrabold ">Book Ride</p>
+            </a>
           </div>
         </div>
       </div>
+      {/* Row 2 Column 3 */}
 
-      <div className="models-div__box">
-        <div className="models-div__box__img">
-          <img src={CarImg6} alt="car_img" />
-          <div className="models-div__box__descr">
-            <div className="models-div__box__descr__name-price">
-              <div className="models-div__box__descr__name-price__name">
-                <p>VW Passat</p>
-                {/* <span>
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                  <IconStar width={15} height={15} />
-                </span> */}
+      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
+        <div className="w-full h-auto ">
+          <img
+            src={CarImg6}
+            alt="car_img"
+            className="w-full  rounded-lg  min-h-[17rem] object-fill"
+          />
+          <div className="px-6 pt-6 pb-5 flex-col text-pmBlack ">
+            <div className="flex justify-between items-center">
+              <div className="flex flex-col text-left gap-2">
+                <p className="text-2xl font-bold leading-none">VW Passat</p>
+                <span className="flex gap-2">
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                  <IconStar
+                    width={15}
+                    height={15}
+                    className=" text-[#ffc933]"
+                  />
+                </span>
               </div>
-              <div className="models-div__box__descr__name-price__price">
-                <h4>$25</h4>
-                <p>per day</p>
+              <div className="flex flex-col text-right">
+                <h4 className="text-[1.6rem] font-bold leading-none">$25</h4>
+                <p className="text-[1rem]">per day</p>
               </div>
             </div>
-            <div className="models-div__box__descr__name-price__details">
-              <span>&nbsp; CC</span>
-              <span style={{ textAlign: "right" }}>4/5 &nbsp;</span>
-              <span>&nbsp; Manual</span>
-              <span style={{ textAlign: "right" }}>Diesel &nbsp;</span>
+            <div className="grid grid-cols-2 gap-6 mt-6 pb-8 CardCarSpan">
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
+                <IconCar /> &nbsp; CC
+              </span>
+
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
+                4/5 &nbsp; <IconCar />
+              </span>
+              <span className="text-[1.1rem] font-medium text-[#777777] text-left flex leading-none">
+                <IconCar /> &nbsp; Manual
+              </span>
+              <span className="text-[1.1rem] font-medium text-[#777777] flex justify-end leading-none">
+                Diesel &nbsp; <IconCar />
+              </span>
             </div>
-            <div className="models-div__box__descr__name-price__btn">
-              <Link onClick={() => window.scrollTo(0, 0)} to="/">
-                Book Ride
-              </Link>
-            </div>
+
+            <a
+              href="#home"
+              className="flex py-6 mt-3 bg-pmColor rounded-sm font-bold text-white shadow-boxShadowRed transitons-shadow duration-300 hover:shadow-boxShadowRedHover"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              <p className="mx-auto text-xl font-extrabold ">Book Ride</p>
+            </a>
           </div>
         </div>
       </div>

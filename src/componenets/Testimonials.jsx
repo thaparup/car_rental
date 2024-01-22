@@ -46,7 +46,7 @@ export default function Testimonials() {
 
             <div className="flex justify-between">
               <div className="flex gap-3">
-                <img src={img1} alt="" height={60} width={60} />
+                <img src={img2} alt="" height={60} width={60} />
                 <div>
                   <h4>Harry Potter</h4>
                   <h4>Belgrade</h4>

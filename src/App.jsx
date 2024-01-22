@@ -17,6 +17,7 @@ import Footer from "./componenets/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import VehicleModel from "./componenets/VehicleModel";
+import TestimonialsPage from "./Pages/TestimonialsPage";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -40,6 +41,7 @@ function App() {
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/models" element={<VehicleModel />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} />
         </Routes>
       </BrowserRouter>
     </>
