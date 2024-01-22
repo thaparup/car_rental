@@ -74,3 +74,7 @@ li{
 
     border-bottom: 1px solid #c6c6c6; 
   }
+
+  .contactBg{
+    background-position: center center;
+  }

@@ -17,6 +17,7 @@ export default {
         bg: "rgb(249 250 251)",
         formBorderColor: "#ccd7e6",
         formColor: "#878585",
+        pmGray: "#777777",
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/logo/logo.png')",
@@ -35,6 +36,7 @@ export default {
       boxShadowRedHover: "#ff4d30 1px 8px 10px 0px",
       boxShadowRedReserveNow: "6px 6px 0 #efe9e9",
       bosShadownTestimonial: "0 20px 40px 0 rgba(0, 0, 0, 0.08)",
+      boxShadowTeam: " 0px 20px 10px 0px rgba(0, 0, 0, 0.08)",
     },
   },
 

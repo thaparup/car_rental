@@ -18,6 +18,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import VehicleModel from "./componenets/VehicleModel";
 import TestimonialsPage from "./Pages/TestimonialsPage";
+import Team from "./Pages/Team";
+import Contact from "./Pages/Contact";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -42,6 +44,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/models" element={<VehicleModel />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
+          <Route path="/teams" element={<Team />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </>
