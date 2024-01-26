@@ -134,7 +134,7 @@ export default function BookACar() {
     else if (carType === "VW Passat CC") setCarImage(CarPassat);
   }, [carType]);
   return (
-    <section className="border-2 border-white relative mx-[7.2rem] my-8 bg-white rounded-md shadow-boxShadow bg-[url('/src/assets/book-car/book-bg.png')]">
+    <section className="border-2  border-white relative mx-[7.2rem] bg-white rounded-md shadow-boxShadow bg-[url('/src/assets/book-car/book-bg.png')]">
       <div className="px-12 py-12">
         <h3 className="text-2xl font-bold font-poppins">Book a car</h3>
 
