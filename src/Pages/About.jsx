@@ -8,10 +8,12 @@ import image1 from "../assets/plan/icon1.png";
 import image2 from "../assets/plan/icon2.png";
 import image3 from "../assets/plan/icon3.png";
 import BottomBanner from "../componenets/BottomBanner";
+import HeroPages from "../componenets/HeroPages";
 export default function About() {
   return (
-    <section className="max-w-[55rem] mx-auto">
-      <div className="flex ">
+    // max-w-[55rem] mx-auto
+    <section className="">
+      {/* <div className="flex ">
         <div className="w-[50%] flex">
           <img src={AboutMain} alt="" className=" h-[90%] self-end" />
         </div>
@@ -106,7 +108,9 @@ export default function About() {
         </div>
       </div>
 
-      <BottomBanner />
+      <BottomBanner /> */}
+
+      <HeroPages name="About" />
     </section>
   );
 }

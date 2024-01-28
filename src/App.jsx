@@ -20,6 +20,7 @@ import VehicleModel from "./componenets/VehicleModel";
 import TestimonialsPage from "./Pages/TestimonialsPage";
 import Team from "./Pages/Team";
 import Contact from "./Pages/Contact";
+import Homepage from "./Pages/Homepage";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -41,10 +42,11 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/models" element={<VehicleModel />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
-          <Route path="/teams" element={<Team />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>

@@ -134,7 +134,7 @@ export default function BookACar() {
     else if (carType === "VW Passat CC") setCarImage(CarPassat);
   }, [carType]);
   return (
-    <section className="border-2  border-white relative mx-[7.2rem] bg-white rounded-md shadow-boxShadow bg-[url('/src/assets/book-car/book-bg.png')]">
+    <section className="border-2  border-white relative mx-[6rem] lg:mx-[5rem] md:mx-[4rem] sm:mx-[2rem] xsm:mx-[1rem] bg-white rounded-md shadow-boxShadow bg-[url('/src/assets/book-car/book-bg.png')]">
       <div className="px-12 py-12">
         <h3 className="text-2xl font-bold font-poppins">Book a car</h3>
 
@@ -159,8 +159,8 @@ export default function BookACar() {
           </div>
         )}
 
-        <div className="pt-6 grid grid-cols-3 gap-4">
-          <div>
+        <div className="grid grid-cols-3 gap-6 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1">
+          <div className="mt-6">
             <div className="flex gap-2">
               <FaShuttleVan size={24} />
               <label htmlFor="" className="font-semibold">
@@ -171,7 +171,7 @@ export default function BookACar() {
             <select
               name="language"
               id="language"
-              className="border-[1px] border-formBorderColor py-2  pl-6 w-full text-[0.9rem] font-medium text-formColor mt-3 outline-none "
+              className="border-[1px] border-formBorderColor py-3  pl-6 w-full text-[0.9rem] font-medium text-formColor mt-3 outline-none "
               aria-placeholder="sfkjsdfkl"
               onChange={(e) => handleCarType(e)}
               value={carType}
@@ -185,7 +185,7 @@ export default function BookACar() {
               <option value="VW Passat CC">VW Passat CC</option>
             </select>
           </div>
-          <div className="">
+          <div className="mt-6">
             <div className="flex gap-2">
               <FaLocationDot size={24} />
               <label htmlFor="" className="font-semibold">
@@ -195,7 +195,7 @@ export default function BookACar() {
             <select
               name="language"
               id="language"
-              className="border-[1px] border-formBorderColor  pl-6 w-full text-[0.9rem] py-2 text-formColor mt-3 col-span-1 outline-none focus:outline-none "
+              className="border-[1px] border-formBorderColor  pl-6 w-full text-[0.9rem] py-3 text-formColor mt-3 col-span-1 outline-none focus:outline-none "
               aria-placeholder="sfkjsdfkl"
               onChange={(e) => handlePickup(e)}
               value={pickUp}
@@ -208,7 +208,7 @@ export default function BookACar() {
               <option value="Sikhim">Sikhim</option>
             </select>
           </div>
-          <div>
+          <div className="mt-6">
             <div className="flex gap-2">
               <FaLocationDot size={24} />
               <label htmlFor="" className="font-semibold">
@@ -218,7 +218,7 @@ export default function BookACar() {
             <select
               name="language"
               id="language"
-              className="border-[1px] border-formBorderColor p pl-6 w-full text-[0.9rem] py-2 text-formColor mt-3 outline-none focus:outline-none"
+              className="border-[1px] border-formBorderColor  pl-6 w-full text-[0.9rem] py-3 text-formColor mt-3 outline-none focus:outline-none"
               aria-placeholder="sfkjsdfkl"
               onChange={(e) => handleDropOff(e)}
               value={dropOff}
@@ -231,11 +231,10 @@ export default function BookACar() {
               <option value="Sikhim">Sikhim</option>
             </select>
           </div>
-        </div>
 
-        {/*  second one */}
-        <div className="pt-5 grid grid-cols-3 gap-4 pb-6">
-          <div className="">
+          {/*  second one */}
+
+          <div className="lg:mt-[1.40rem] md:mt-[1.40rem] ">
             <div className="flex gap-2">
               <CiCalendarDate size={24} className="" />
               <label htmlFor="" className="font-semibold">
@@ -245,7 +244,7 @@ export default function BookACar() {
             </div>
             <input
               type="date"
-              className="border-[1px] border-formBorderColor  pl-6  text-[0.9rem] py-2 text-formColor mt-3 box-form__car-time w-full outline-none focus:outline-none"
+              className="border-[1px] border-formBorderColor  pl-6  text-[0.9rem] py-3 text-formColor mt-3 box-form__car-time w-full outline-none focus:outline-none "
               onChange={(e) => handleStartDate(e)}
             />
           </div>
@@ -258,13 +257,13 @@ export default function BookACar() {
             </div>
             <input
               type="date"
-              className="border-[1px] border-formBorderColor  pl-6  text-[0.9rem] py-2 text-formColor mt-3 box-form__car-time w-full outline-none focus:outline-none"
+              className="border-[1px] border-formBorderColor  pl-6  text-[0.9rem] py-3 text-formColor mt-3 box-form__car-time w-full outline-none focus:outline-none "
               onChange={(e) => handleEndDate(e)}
             />
           </div>
           <div className="w-full  bg-yellow-400 self-end mb-1">
             <button
-              className="bg-pmColor w-full px-24 py-[0.6rem] font-bold text-white shadow-boxShadowRed hover: shadow-backShadowRedHover"
+              className="bg-pmColor w-full px-24 py-[0.77rem] font-bold text-white shadow-boxShadowRed hover: shadow-backShadowRedHover "
               onClick={(e) => handleModal(e)}
             >
               Search

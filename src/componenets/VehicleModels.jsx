@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { CAR_DATA, CAR_DATA as cars } from "./CarData";
 
 export default function VehicleModels() {
-  const [activeCar, setActiveCar] = useState(null);
+  const [activeCar, setActiveCar] = useState("VW Golf 6");
 
   const data = CAR_DATA.map((cars) => cars.map((car) => car.name));
 
@@ -11,13 +11,13 @@ export default function VehicleModels() {
     setImageLoaded(false);
   };
   const [imageLoaded, setImageLoaded] = useState(false);
-  console.log(imageLoaded);
+
   const handleImageLoad = () => {
     setImageLoaded(true);
   };
 
   return (
-    <section className="px-[7.2rem] pb-40">
+    <section className="px-[6rem] lg:px-[5rem] md:px-[4rem] sm:px-[3rem] xsm:px-[1rem] pb-44">
       <h2 className="text-center text-2xl font-semibold">Vehicle Models</h2>
       <h1 className="text-center text-[2.4rem] font-bold ">Our rental fleet</h1>
       <p className=" text-gray-700 text-center pt-3">
@@ -27,8 +27,8 @@ export default function VehicleModels() {
       </p>
       {/*  Car detail */}
 
-      <div className="flex justify-between">
-        <div className="">
+      <div className="flex justify-between lg:flex-wrap md:flex-wrap sm:flex-wrap xsm:flex-wrap">
+        <div className="lg:w-full lg:mt-10 md:mt-10 md:w-full sm:w-full sm:mt-10 xsm:mt-10 xsm:w-full">
           {cars.map((cars) =>
             cars.map((car, index) => (
               <div className="max-w-74 min-w-74 font-poppins">
@@ -37,8 +37,8 @@ export default function VehicleModels() {
                   onClick={() => onClickGetIndexOfTheCar(car.name)}
                   className={`${
                     activeCar === car.name
-                      ? "bg-pmColor text-white text-xl font-semibold my-1 px-10 py-4 min-w-full border-none transition-colors duration-300  hover:bg-pmColor "
-                      : "bg-[#e9e9e9] text-xl  text-pmBlack font-semibold my-1 px-10 py-4 min-w-full border-none transition-colors duration-300  hover:bg-pmColor active:bg-pmColor "
+                      ? "bg-pmColor text-white text-xl font-semibold my-1 px-10 py-[0.84rem] min-w-full border-none transition-colors duration-300  hover:bg-pmColor "
+                      : "bg-[#e9e9e9] text-xl  text-pmBlack font-semibold my-1 px-10 py-[0.84rem] min-w-full border-none transition-colors duration-300  hover:bg-pmColor active:bg-pmColor "
                   }`}
                 >
                   {car.name}
@@ -47,7 +47,7 @@ export default function VehicleModels() {
             ))
           )}
         </div>
-        <div className="bg my-auto">
+        <div className=" my-auto lg:mt-18 md:mt-28 md:mx-auto  sm:mx-auto sm:mt-24 xsm:mx-auto xsm:mt-24 ">
           {activeCar &&
             cars.map((cars) =>
               cars.map((car) => (
@@ -66,7 +66,9 @@ export default function VehicleModels() {
                         src={car.img}
                         alt="Image of a car"
                         onLoad={handleImageLoad}
-                        className={`${!imageLoaded ? "hidden" : ""}`}
+                        className={`${
+                          !imageLoaded ? "hidden" : ""
+                        } sm:w-[40rem]`}
                       />
                     </>
                   ) : null}
@@ -74,7 +76,7 @@ export default function VehicleModels() {
               ))
             )}
         </div>
-        <div>
+        <div className="lg:mt-12 md:mx-auto md:mt-12 sm:mt-16  sm:mx-auto xsm:mt-12 xsm:mx-auto ">
           {activeCar &&
             cars.map((cars) =>
               cars.map((car) =>
@@ -93,7 +95,7 @@ export default function VehicleModels() {
 
                     {/* table*/}
 
-                    <div class="grid grid-cols-2 gap-0 border-2 border-black border-t-0">
+                    <div class="grid grid-cols-2 gap-0 border-2 border-black border-t-0 ">
                       <div className="flex justify-between py-[0.4rem] ">
                         <span className="block mx-auto">Model</span>{" "}
                         <span className="block self-center">|</span>
