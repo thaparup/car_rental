@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
       <div className="pt-[4.8rem] pb-[1.8rem]">
         <img src={banner} alt="" className="mx-auto w-[76%]" />
       </div>
-      <div className=" flex justify-around  md:flex-col sm:flex-col xsm:flex-col items-center md:gap-16 sm:gap-16 xsm:gap-16 ">
+      <div className=" flex justify-around md:flex-col sm:flex-col xsm:flex-col items-center md:gap-16 sm:gap-16 xsm:gap-16 ">
         <div className=" w-[32.7rem] sm:text-center md:text-center xsm:w-full flex flex-col gap-3  xsm:text-center ">
           <h4 className="text-xl font-bold font-poppins">Why Choose Us</h4>
           <h2 className="text-[2.55rem] font-bold font-poppins leading-none ">
@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
             <IconChevronsRight />
           </a>
         </div>
-        <div className=" flex flex-col gap-9">
+        <div className=" w-[32rem] xsm:w-full flex flex-col gap-9">
           <div className="flex gap-3 md:gap-5 sm:gap-5  xsm:flex xsm:flex-col xsm:gap-4 xsm:items-center">
             <img
               src={Box1}

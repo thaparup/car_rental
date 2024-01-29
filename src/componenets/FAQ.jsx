@@ -22,16 +22,8 @@ export default function FAQ() {
           </p>
         </div>
 
-        <div className="max-w-[45rem] mx-auto bg"></div>
-        {/* <Accrodion
-          questions={QAndAOne.question}
-          answers={QAndAOne.answer}
-          accordion={accordionOne}
-          setAccordion={setAccordionOne}
-        /> */}
-
-        <div className="max-w-[45rem] mx-auto">
-          <div className="shadow-boxShadow">
+        <div className="">
+          <div className="">
             <Accrodion
               questions={QAndAOne.question}
               answers={QAndAOne.answer}

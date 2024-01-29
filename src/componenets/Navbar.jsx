@@ -69,7 +69,7 @@ export default function Navbar() {
         className={`${
           nav
             ? "hidden"
-            : "absolute flex justify-between z-20 max-w-[133rem] w-full h-auto  items-center px-[6rem] py-[2rem] mx-auto top-0 left-0 right-0 lg:px-[5rem] md:px-[4rem] sm:px-[3rem] xsm:px-[1rem]"
+            : "absolute flex justify-between z-20 max-w-[133rem] w-full h-auto  items-center py-[2rem] mx-auto top-0 left-0 right-0  px-[6rem] lg:px-[5rem] md:px-[4rem] sm:px-[3rem] xsm:px-[1rem]"
         }`}
       >
         <div className="min-h-[60px] min-w-[160px">

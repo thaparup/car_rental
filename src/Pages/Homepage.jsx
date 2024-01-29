@@ -6,6 +6,9 @@ import VehicleModels from "../componenets/VehicleModels";
 import Banner from "../componenets/Banner";
 import WhyChooseUs from "../componenets/WhyChooseUs";
 import Testimonials from "../componenets/Testimonials";
+import FAQ from "../componenets/FAQ";
+import Download from "../componenets/Download";
+import Footer from "../componenets/Footer";
 
 export default function Homepage() {
   return (
@@ -16,9 +19,10 @@ export default function Homepage() {
       <VehicleModels />
       <Banner />
       <WhyChooseUs />
-      {/*
-       */}
-      {/* <Testimonials /> */}
+      <Testimonials />
+      <FAQ />
+      <Download />
+      <Footer />
     </section>
   );
 }
