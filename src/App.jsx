@@ -26,19 +26,6 @@ function App() {
 
   return (
     <>
-      {/* <HeroBg />
-      <Navbar /> */}
-      {/* <HeroSection />
-      <BookACar />
-      <PlanTrip />
-      <VehicleModels />
-      <Banner />
-      <WhyChooseUs />
-      <Testimonials />
-      <FAQ />
-      <Download />
-      <Footer /> */}
-
       <BrowserRouter>
         <Navbar />
         <Routes>

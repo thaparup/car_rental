@@ -4,7 +4,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (
-    <section className="px-[3rem]  py-20 flex justify-evenly lg:flex-wrap md:flex-wrap sm:flex-wrap xsm:flex-wrap">
+    <section className="px-[3rem]  py-24 flex justify-evenly lg:flex-wrap md:flex-wrap sm:flex-wrap xsm:flex-wrap">
       <div className="lg:w-1/2 lg:flex lg:flex-col lg:items-center md:w-1/2 md:flex md:flex-col md:items-center sm:w-1/2 sm:flex sm:flex-col sm:items-center xsm:w-full xsm:flex xsm:flex-col xsm:items-center ">
         <div>
           <span className="text-[1.5rem] font-bold ">CAR</span>

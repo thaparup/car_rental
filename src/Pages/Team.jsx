@@ -5,6 +5,9 @@ import Person3 from "../assets/team/3.png";
 import Person4 from "../assets/team/4.png";
 import Person5 from "../assets/team/5.png";
 import Person6 from "../assets/team/6.png";
+import HeroPages from "../componenets/HeroPages";
+import BottomBanner from "../componenets/BottomBanner";
+import Footer from "../componenets/Footer";
 
 function Team() {
   const teamPpl = [
@@ -18,23 +21,24 @@ function Team() {
   return (
     <>
       <section className="team-page">
-        <div className="cotnainer mx-[11rem]">
-          <div className="grid grid-cols-3 gap-10">
-            {teamPpl.map((ppl, id) => (
-              <div key={id} className="team-container__box">
-                <div className="bg-[#f6f6f6]">
-                  <img src={ppl.img} alt="team_img" />
-                </div>
-                <div className="bg-white text-pmBlack p-8 text-center shadow-boxShadowTeam ">
-                  <h3 className="text-2xl font-bold font-poppins">
-                    {ppl.name}
-                  </h3>
-                  <p className="text-md text-pmGray font-poppins ">{ppl.job}</p>
-                </div>
+        <HeroPages name="Our Team" />
+
+        <div className="flex justify-center flex-wrap gap-10 py-28 px-20 mb-12 ">
+          {teamPpl.map((ppl, id) => (
+            <div key={id} className=" w-[20rem] ">
+              <div className="bg-[#f6f6f6] rounded-lg">
+                <img src={ppl.img} alt="team_img" />
               </div>
-            ))}
-          </div>
+              <div className="bg-white text-pmBlack p-8 text-center shadow-boxShadowTeam ">
+                <h3 className="text-2xl font-bold font-poppins">{ppl.name}</h3>
+                <p className="text-md text-pmGray font-poppins ">{ppl.job}</p>
+              </div>
+            </div>
+          ))}
         </div>
+
+        <BottomBanner />
+        <Footer />
       </section>
     </>
   );

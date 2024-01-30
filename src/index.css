@@ -125,4 +125,29 @@ li{
     background-position: center center;
   }
 
+  @media screen and (min-width: 767px) and (max-width: 900px) {
+    .about {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       max-width: 900px;
+       
+    }
+  }
+  @media screen and (min-width: 767px) and (max-width: 1220px) {
+    .car_content {
+       flex-wrap: wrap;
+        
+       
+    }
+  }
+  @media screen and (min-width: 767px) and (max-width: 1000px) {
+    .contact_content {
+       flex-wrap: wrap;
+        
+       
+    }
+  }
+
+  
  

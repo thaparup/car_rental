@@ -4,13 +4,11 @@ import CarImg3 from "../assets/cars-big/toyota-box.png";
 import CarImg4 from "../assets/cars-big/bmw-box.png";
 import CarImg5 from "../assets/cars-big/benz-box.png";
 import CarImg6 from "../assets/cars-big/passat-box.png";
-import { Link } from "react-router-dom";
-import { IconCar, IconChevronsRight, IconStar } from "@tabler/icons";
-// import { IconCar, IconPhone, IconStar } from "@tabler/icons-react";
+import { IconCar, IconStar } from "@tabler/icons";
 
 export default function CarCard() {
   return (
-    <div className="grid grid-cols-3 mx-[12.3rem] gap-8">
+    <div className="flex justify-center flex-wrap mt-16 pb-36 gap-6 car_content">
       <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
         <div className="w-full h-auto  ">
           <img
@@ -18,7 +16,7 @@ export default function CarCard() {
             alt="car_img"
             className="w-full  rounded-lg h-[17rem] "
           />
-          <div className="px-6 pt-6 pb-5 flex-col text-pmBlack ">
+          <div className="px-6 pt-6 pb-5 flex-col text-pmBlack w-[24rem]">
             <div className="flex justify-between items-center">
               <div className="flex flex-col text-left gap-2">
                 <p className="text-2xl font-bold leading-none">Audi A1</p>
@@ -84,7 +82,7 @@ export default function CarCard() {
 
       {/* Row 1 Column 2 */}
 
-      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
+      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg w-[24rem]">
         <div className="w-full h-auto ">
           <img
             src={CarImg2}
@@ -157,7 +155,7 @@ export default function CarCard() {
 
       {/* Row1 Column 3 */}
 
-      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
+      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg w-[24rem]">
         <div className="w-full h-auto ">
           <img
             src={CarImg3}
@@ -230,7 +228,7 @@ export default function CarCard() {
 
       {/* Row 2 Coulumn1 */}
 
-      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
+      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg  w-[24rem]">
         <div className="w-full h-auto ">
           <img
             src={CarImg4}
@@ -302,7 +300,7 @@ export default function CarCard() {
       </div>
       {/* Row 2 Column 2 */}
 
-      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
+      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg  w-[24rem]">
         <div className="w-full h-auto ">
           <img
             src={CarImg5}
@@ -374,7 +372,7 @@ export default function CarCard() {
       </div>
       {/* Row 2 Column 3 */}
 
-      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg">
+      <div className="border-[1px] border-[#d5d5d5] flex flex-col rounded-lg w-[24rem]">
         <div className="w-full h-auto ">
           <img
             src={CarImg6}

@@ -4,7 +4,7 @@ import img2 from "../assets/testimonials/pfp2.jpg";
 import { TbQuote } from "react-icons/tb";
 export default function Testimonials() {
   return (
-    <section className="py-24 ">
+    <section className="py-24 bg-[#f8f8f8]">
       <div className="flex flex-col ">
         <div className="flex flex-col max-w-[41.8rem] mx-auto ">
           <h4 className="text-[1.34rem] text-center font-medium font-rubik">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaShuttleVan } from "react-icons/fa";
 import { FaCircleInfo, FaLocationDot } from "react-icons/fa6";
 import { CiCalendarDate } from "react-icons/ci";
@@ -10,7 +10,7 @@ import CarBmw from "../assets/cars-big/bmw320.jpg";
 import CarMercedes from "../assets/cars-big/benz.jpg";
 import CarPassat from "../assets/cars-big/passatcc.jpg";
 
-export default function BookACar() {
+export default function BookACar({ divRef, inputRef }) {
   const [modal, setModal] = useState(false);
   const [carType, setCarType] = useState("");
   const [pickUp, setPickUp] = useState("");
@@ -44,6 +44,14 @@ export default function BookACar() {
   const [agreeError, setAgreeError] = useState(false);
   const [pickUpTimeError, setPickUpTimeError] = useState(false);
   const [dropOffTimeError, setDropOffTimeError] = useState(false);
+
+  const refOne = useRef();
+  const refTwo = useRef();
+
+  useEffect(() => {
+    inputRef.current = refTwo.current;
+    divRef.current = refOne.current;
+  }, [inputRef, divRef]);
 
   const handlePickUpTime = (e) => {
     setPickUpTime(e.target.value);
@@ -134,7 +142,11 @@ export default function BookACar() {
     else if (carType === "VW Passat CC") setCarImage(CarPassat);
   }, [carType]);
   return (
-    <section className="border-2  border-white relative mx-[6rem] lg:mx-[5rem] md:mx-[4rem] sm:mx-[2rem] xsm:mx-[1rem] bg-white rounded-md shadow-boxShadow bg-[url('/src/assets/book-car/book-bg.png')]">
+    <section
+      id="booking-section"
+      ref={refOne}
+      className="border-2  border-white relative mx-[6rem] lg:mx-[5rem] md:mx-[4rem] sm:mx-[2rem] xsm:mx-[1rem] bg-white rounded-md shadow-boxShadow bg-[url('/src/assets/book-car/book-bg.png')]"
+    >
       <div className="px-12 py-12">
         <h3 className="text-2xl font-bold font-poppins">Book a car</h3>
 
@@ -171,10 +183,11 @@ export default function BookACar() {
             <select
               name="language"
               id="language"
-              className="border-[1px] border-formBorderColor py-3  pl-6 w-full text-[0.9rem] font-medium text-formColor mt-3 outline-none "
+              className="border-[1px] border-formBorderColor py-3  pl-6 w-full text-[0.9rem] font-medium text-formColor mt-3 outline-none focus:ring-[1px] focus:ring-pmColor"
               aria-placeholder="sfkjsdfkl"
               onChange={(e) => handleCarType(e)}
               value={carType}
+              ref={refTwo}
             >
               <option value="">Select your car type</option>
               <option value="Audi A1 S-Line">Audi A1 S-Line</option>

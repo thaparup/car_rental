@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { CAR_DATA, CAR_DATA as cars } from "./CarData";
 
-export default function VehicleModels() {
+export default function VehicleModels({ handleClick }) {
   const [activeCar, setActiveCar] = useState("VW Golf 6");
 
   const data = CAR_DATA.map((cars) => cars.map((car) => car.name));
@@ -145,7 +145,10 @@ export default function VehicleModels() {
                       </div>
                       <span className="block m-auto">{car.fuel}</span>
                     </div>
-                    <button className="bg-pmColor w-full py-3  text-white text-xl font-semibold font-rubik mt-2 shadow-boxShadowRedReserveNow">
+                    <button
+                      className="bg-pmColor w-full py-3 text-white text-xl font-semibold font-rubik mt-2 shadow-boxShadowRedReserveNow"
+                      onClick={handleClick}
+                    >
                       RESERVE NOW
                     </button>
                   </div>

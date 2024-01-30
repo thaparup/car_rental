@@ -73,7 +73,7 @@ export default function Navbar() {
         }`}
       >
         <div className="min-h-[60px] min-w-[160px">
-          <a href="">
+          <Link to="/">
             <img
               src={Logo}
               height={143}
@@ -83,47 +83,47 @@ export default function Navbar() {
                 isImageLoaded ? "visible translate-y-[6px]" : "hidden"
               }`}
             />
-          </a>
+          </Link>
         </div>
 
         <div className="text-md font-medium gap-5 text-pmBlack self-center mt-3  md:hidden sm:hidden xsm:hidden ">
           <ul className="flex gap-4 ">
             <li className=" transition-colors duration-500 hover:text-pmColor font-rubik">
-              <a href="/home">Home</a>
+              <Link to="/home">Home</Link>
             </li>
 
             <li className="transition-colors duration-500 hover:text-pmColor font-rubik">
-              <a href="/about">About</a>
+              <Link to="/about">About</Link>
             </li>
 
             <li className="transition-colors duration-500 hover:text-pmColor font-rubik">
-              <a href="/models">Vehicle Models</a>
+              <Link to="/models">Vehicle Models</Link>
             </li>
 
             <li className="transition-colors duration-500 hover:text-pmColor font-rubik">
-              <a href="/testimonials">Testimonials</a>
+              <Link to="/testimonials">Testimonials</Link>
             </li>
 
             <li className="transition-colors duration-500 hover:text-pmColor font-rubik">
-              <a href="/teams">Our Team</a>
+              <Link to="/team">Our Team</Link>
             </li>
 
             <li className="transition-colors duration-500 hover:text-pmColor font-rubik">
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
 
         <div className="text-md font-medium self-center mt-2 md:hidden sm:hidden xsm:hidden font-rubik ">
-          <a href="" className="pr-6">
+          <Link to="" className="pr-6">
             Sign In
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="bg-pmColor text-white font-semibold rounded-[0.2rem]  px-[2rem] py-[0.9rem] shadow-boxShadowRed transition-shadow duration-300 hover:shadow-boxShadowRedHover"
           >
             Register
-          </a>
+          </Link>
         </div>
         <div
           className={`${

@@ -4,11 +4,14 @@ import { IconChevronsRight } from "@tabler/icons";
 import Box1 from "../assets/chooseUs/icon1.png";
 import Box2 from "../assets/chooseUs/icon2.png";
 import Box3 from "../assets/chooseUs/icon3.png";
+import { Link } from "react-router-dom";
 
 export default function WhyChooseUs() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: (0, 0), behavior: "smooth" });
+  };
   return (
-    <section className="bg-[url('/src/assets/chooseUs/bg.png')] bg-cover bg-no-repeat bgPosition">
-      -
+    <section className="bg-[url('/src/assets/chooseUs/bg.png')] bg-cover bg-no-repeat bgPosition pb-32">
       <div className="pt-[4.8rem] pb-[1.8rem]">
         <img src={banner} alt="" className="mx-auto w-[76%]" />
       </div>
@@ -25,13 +28,14 @@ export default function WhyChooseUs() {
             the bank. Our deals are designed to give you the ultimate renting
             experience, so don't miss out on your chance to save big.
           </p>
-          <a
-            href="#home"
+          <Link
+            to=""
             className="flex w-fit py-4 px-8 mt-6 bg-pmColor rounded-sm font-bold text-white shadow-boxShadowRed transitons-shadow duration-300 hover:shadow-boxShadowRedHover self-start md:self-center sm:self-center xsm:self-center"
+            onClick={scrollToTop}
           >
             Find Details &nbsp;&nbsp;
             <IconChevronsRight />
-          </a>
+          </Link>
         </div>
         <div className=" w-[32rem] xsm:w-full flex flex-col gap-9">
           <div className="flex gap-3 md:gap-5 sm:gap-5  xsm:flex xsm:flex-col xsm:gap-4 xsm:items-center">

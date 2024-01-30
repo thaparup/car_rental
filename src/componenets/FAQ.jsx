@@ -9,7 +9,7 @@ export default function FAQ() {
   const [accordionThree, setAccordionThree] = useState(false);
 
   return (
-    <section className="bg-[url('/src/assets/faq/car.png')] bg-no-repeat bg-auto bgCar pb-20 ">
+    <section className="bg-[url('/src/assets/faq/car.png')] bg-no-repeat bg-auto bgCar py-20 pb-24">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-2 max-w-[45rem] mx-auto text-center">
           <h4 className="text-xl font-semibold ">FAQ</h4>
